@@ -203,8 +203,7 @@ void app_render(app_t *p_app) {
 void app_events(app_t *p_app) {
 	while (SDL_PollEvent(&p_app->event)) {
 		switch (p_app->event.type) {
-		case SDL_QUIT:        p_app->quit = true; break;
-		case SDL_WINDOWEVENT: app_render(p_app);  break;
+		case SDL_QUIT: p_app->quit = true; break;
 
 		case SDL_KEYDOWN:
 			switch (p_app->event.key.keysym.sym) {
