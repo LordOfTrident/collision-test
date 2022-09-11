@@ -5,6 +5,7 @@
 #include <stdbool.h> /* bool, true, false */
 #include <time.h>    /* time, time_t */
 #include <math.h>    /* cos, sin, atan2 */
+#include <stdio.h>   /* snprintf */
 
 #include <SDL2/SDL.h>
 

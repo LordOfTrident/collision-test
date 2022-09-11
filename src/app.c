@@ -105,7 +105,7 @@ void app_run(app_t *p_app) {
 		fps_timer   = now;
 
 		char title[32] = {0};
-		snprintf(title, 32, TITLE" FPS: %li", p_app->fps);
+		snprintf(title, sizeof(title), TITLE" FPS: %zu", p_app->fps);
 
 		SDL_SetWindowTitle(p_app->window, title);
 
